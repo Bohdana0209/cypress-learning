@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/Bohdana0209/cypress-learning#readme",
   "devDependencies": {
-    "cypress": "^15.5.0"
+    "cypress": "^15.6.0"
   }
 }
