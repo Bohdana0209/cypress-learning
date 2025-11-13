@@ -1,10 +1,10 @@
 import { defineConfig } from "cypress";
 
 export default defineConfig({
-   reporter: 'mochawesome',
+     reporter: 'mochawesome',
     reporterOptions: {
         reportDir: 'cypress/results',
-        overwrite: true,
+        overwrite: false,
         html: false,
         json: true,
     },
@@ -18,7 +18,7 @@ export default defineConfig({
     },
   defaultCommandTimeout: 7000,
   e2e: {
-     baseUrl: "https://qauto.forstudy.space",
+     baseUrl: "https://qauto2.forstudy.space",
       watchForFileChanges: false,
       specPattern: "cypress/e2e/**/*.{spec,test}.{js,jsx,ts,tsx}",
       experimentalRunAllSpecs: true,
