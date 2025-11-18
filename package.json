@@ -7,7 +7,14 @@
   "scripts": {
     "test": "npx cypress test",
     "test:cloud": "npx cypress run --record --key d2eb7ba5-f2d9-4976-b997-ae29528ad6b1",
-    "open": "npx cypress open"
+    "open": "npx cypress open",
+    "qauto:open": "cypress open --config-file cypress.qauto.config.js",
+    "qauto:run": "cypress run  --config-file cypress.qauto.config.js",
+    "qauto2:open": "cypress open --config-file cypress.qauto2.config.js",
+    "qauto2:run": "cypress run  --config-file cypress.qauto2.config.js",
+     "merge-reports": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json",
+    "generate-report": "npx marge mochawesome.json",
+    "report": "npm run merge-reports && npm run generate-report"
   },
   "repository": {
     "type": "git",
@@ -20,6 +27,9 @@
   },
   "homepage": "https://github.com/Bohdana0209/cypress-learning#readme",
   "devDependencies": {
-    "cypress": "^15.6.0"
+    "cypress": "^15.6.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.2"
   }
 }
