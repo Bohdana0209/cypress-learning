@@ -1,5 +1,5 @@
-import HomePage from './HomePage.js';
-import RegistrationForm from './RegistrationForm.js';
+import HomePage from '.../.../src/pageObjects/HomePage.js';
+import RegistrationForm from '.../.../src/pageObjects/RegistrationForm.js';
 
 describe('Registration — Successful user sign up (UI only)', () => {
   beforeEach(() => {
